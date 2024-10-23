@@ -1,0 +1,24 @@
+  [
+    {
+      "name": "default",
+      "type": "postgres",
+      "host": "localhost",
+      "port": 5432,
+      "username": "postgres",
+      "password": "postgres",
+      "database": "datalouna",
+      "synchronize": false,
+      "logging": true,
+      "entities": [
+        "./build/**/*.entity.{js,ts}"
+      ],
+      "migrations": [
+        "migrations/*.js"
+      ],
+      "migrationsTableName": "datalouna.migrations",
+      "cli": {
+        "migrationsDir": "migrations"
+      }
+    }
+  ]
+  
